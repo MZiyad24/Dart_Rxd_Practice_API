@@ -5,6 +5,7 @@ import * as admin from 'firebase-admin';
 import { ValidationPipe } from '@nestjs/common';
 import { FirebaseExceptionFilter } from './firebase/firebase.filter';
 
+
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   const db = admin.firestore();
